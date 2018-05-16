@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size15"
+        android:background="@drawable/modify"
+        android:onClick="modifyActionButton"
+        tools:onClick="modifyActionButton" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:onClick="cancelButtonClick"
+        tools:onClick="cancelButtonClick"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_unchecked"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="38dp"/>
+
+    <View
+        android:id="@+id/butoane"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/butoane"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#dbd6d6"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layer0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent0"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify0"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:checked="false"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify1"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify2"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify3"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer4"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify4"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer5"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify5"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer6"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify6"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer7"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify7"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer8"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent8"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify8"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer9"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent9"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify9"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer10"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent10"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify10"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer11"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent11"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify11"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer12"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent12"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify12"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer13"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent13"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify13"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer14"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent14"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify14"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer15"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent15"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify15"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer16"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent16"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify16"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer17"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent17"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify17"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer18"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent18"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify18"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer19"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent19"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify19"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer20"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent20"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify20"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layer21"
+                    android:background="@drawable/on_touch_animation"
+                    tools:onClick="onLayoutClick"
+                    android:onClick="onLayoutClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/procent21"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/free_circle_green"
+                        android:gravity="center"
+                        android:text="96%"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/name21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:text="Spatari Cristian"
+                        android:textColor="@color/colourblack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/modify21"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="35dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

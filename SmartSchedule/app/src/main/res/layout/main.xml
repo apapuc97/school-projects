@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chris.orar.MainActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.chris.test.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/logo_year"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:onClick="showTodayDate"
+            android:src="@drawable/graduate_small"
+            percent:layout_heightPercent="30%"
+            percent:layout_marginTopPercent="2%"
+            percent:layout_widthPercent="30%" />
+
+        <TextView
+            android:id="@+id/what_is_your_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_year"
+            android:layout_centerInParent="true"
+            android:text="@string/TIMETABLE"
+            android:textColor="#4a5d6f"
+            android:textSize="20sp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/myCircle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignTop="@+id/logo_year"-->
+            <!--android:background="@drawable/free_circle_green"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="onButtonClick"-->
+            <!--android:text="0"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="50sp"-->
+            <!--tools:layout_editor_absoluteX="88dp"-->
+            <!--tools:layout_editor_absoluteY="169dp"-->
+            <!--tools:onClick="onButtonClick" />-->
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/what_is_your_year"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:lines="2"
+            android:text="@string/select"
+            android:textColor="#cacaca"
+            android:textSize="10sp"
+            percent:layout_marginTopPercent="1%"
+            percent:layout_widthPercent="60%" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_below="@+id/description"
+            android:layout_centerInParent="true"
+            android:background="@drawable/radius"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="#ffffff"
+            android:onClick="showTodayDate"
+            tools:onClick="showTodayDate"
+            percent:layout_heightPercent="8%"
+            percent:layout_marginTopPercent="2%"
+            percent:layout_widthPercent="85%" />
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/next"
+            android:layout_alignParentRight="true"
+            percent:layout_marginTopPercent="45%"
+            percent:layout_marginRightPercent="12%"/>
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_back"
+            percent:layout_marginTopPercent="45%"
+            percent:layout_marginLeftPercent="12%"/>
+
+        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:percent="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:gravity="center"
+            android:id="@+id/percentRelativeLayout">
+
+            <RelativeLayout
+                android:id="@+id/relative0"
+                android:onClick="onObjectClick"
+                percent:layout_heightPercent="23%"
+                percent:layout_marginTopPercent="4%"
+                percent:layout_widthPercent="93%"
+                tools:onClick="onObjectClick">
+
+                <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:percent="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/time"
+                        android:layout_height="match_parent"
+                        percent:layout_widthPercent="22%">
+
+                        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:percent="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/startLesson0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="08:00"
+                                android:textColor="@color/colourblack"
+                                android:textSize="@dimen/size16"
+                                percent:layout_marginLeftPercent="30%"
+                                percent:layout_marginTopPercent="20%" />
+
+                            <TextView
+                                android:id="@+id/finishLesson0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="09:30"
+                                android:textColor="@color/colourgrey"
+                                percent:layout_marginLeftPercent="30%"
+                                percent:layout_marginTopPercent="44%" />
+
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Less"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/time"
+                        percent:layout_widthPercent="60%">
+
+                        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:percent="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/percentRelativeLayout2">
+
+                            <TextView
+                                android:id="@+id/lessonType0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:background="@color/colourlessonyellow"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="Curs"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/size12"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="10%" />
+
+                            <TextView
+                                android:id="@+id/lessonName0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="POO"
+                                android:textColor="@color/colourblack"
+                                android:textSize="@dimen/size20"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="32%" />
+
+                            <TextView
+                                android:id="@+id/teacher0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/MihailKulev"
+                                android:textColor="@color/colourgrey"
+                                android:textSize="@dimen/size12"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="62%" />
+
+                        </android.support.percent.PercentRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/subgroup0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp"
+                            android:text="1'st subgroup"
+                            android:textColor="@color/colourgrey"
+                            android:textSize="@dimen/size12"
+                            percent:layout_marginLeftPercent="10%"
+                            percent:layout_marginTopPercent="10%" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/room0"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/Less"
+                        android:gravity="center"
+                        android:text="3/3"
+                        android:textColor="@color/colourgrey"
+                        percent:layout_widthPercent="60%" />
+
+                </android.support.percent.PercentRelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_below="@id/relative0"
+                android:onClick="onObjectClick"
+                percent:layout_heightPercent="23%"
+                percent:layout_widthPercent="93%"
+                tools:onClick="onObjectClick">
+
+                <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:percent="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/time2"
+                        android:layout_height="match_parent"
+                        percent:layout_widthPercent="22%">
+
+                        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:percent="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/startLesson2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="09:45"
+                                android:textColor="@color/colourblack"
+                                android:textSize="@dimen/size16"
+                                percent:layout_marginLeftPercent="30%"
+                                percent:layout_marginTopPercent="20%" />
+
+                            <TextView
+                                android:id="@+id/finishLesson2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11:15"
+                                android:textColor="@color/colourgrey"
+                                percent:layout_marginLeftPercent="30%"
+                                percent:layout_marginTopPercent="44%" />
+
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Less2"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/time2"
+                        percent:layout_widthPercent="60%">
+
+                        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:percent="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/percentRelativeLayout3">
+
+                            <TextView
+                                android:id="@+id/lessonType1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:background="@color/colourlessonyellow"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="Curs"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/size12"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="10%" />
+
+                            <TextView
+                                android:id="@+id/lessonName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="APA"
+                                android:textColor="@color/colourblack"
+                                android:textSize="@dimen/size20"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="32%" />
+
+                            <TextView
+                                android:id="@+id/teacher1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/MarianaCatruc"
+                                android:textColor="@color/colourgrey"
+                                android:textSize="@dimen/size12"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="62%" />
+
+                        </android.support.percent.PercentRelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/subgroup1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp"
+                            android:text="1'st subgroup"
+                            android:textColor="@color/colourgrey"
+                            android:textSize="@dimen/size12"
+                            percent:layout_marginLeftPercent="10%"
+                            percent:layout_marginTopPercent="62%" />
+                            </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/room1"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/Less2"
+                        android:gravity="center"
+                        android:text="3/3"
+                        android:textColor="@color/colourgrey"
+                        percent:layout_widthPercent="60%" />
+
+                </android.support.percent.PercentRelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_below="@id/relative1"
+                android:onClick="onObjectClick"
+                percent:layout_heightPercent="23%"
+                percent:layout_widthPercent="93%"
+                tools:onClick="onObjectClick">
+
+                <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:percent="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/time3"
+                        android:layout_height="match_parent"
+                        percent:layout_widthPercent="22%">
+
+                        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:percent="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/startLesson3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11:30"
+                                android:textColor="@color/colourblack"
+                                android:textSize="@dimen/size18"
+                                percent:layout_marginLeftPercent="30%"
+                                percent:layout_marginTopPercent="20%" />
+
+                            <TextView
+                                android:id="@+id/finishLesson3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="13:00"
+                                android:textColor="@color/colourgrey"
+                                percent:layout_marginLeftPercent="30%"
+                                percent:layout_marginTopPercent="44%" />
+
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Less3"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/time3"
+                        percent:layout_widthPercent="60%">
+
+                        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:percent="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/percentRelativeLayout4">
+
+                            <TextView
+                                android:id="@+id/lessonType2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:background="@color/colourlessonviolet"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="Laborator"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/size12"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="10%" />
+
+                            <TextView
+                                android:id="@+id/lessonName2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ASDN"
+                                android:textColor="@color/colourblack"
+                                android:textSize="@dimen/size20"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="32%" />
+
+                            <TextView
+                                android:id="@+id/teacher2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/SilviaMunteanu"
+                                android:textColor="@color/colourgrey"
+                                android:textSize="@dimen/size12"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="62%" />
+
+                        </android.support.percent.PercentRelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/subgroup2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp"
+                            android:text="1'st subgroup"
+                            android:textColor="@color/colourgrey"
+                            android:textSize="@dimen/size12"
+                            percent:layout_marginLeftPercent="10%"
+                            percent:layout_marginTopPercent="62%" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/room2"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/Less3"
+                        android:gravity="center"
+                        android:text="214"
+                        android:textColor="@color/colourgrey"
+                        percent:layout_widthPercent="60%" />
+
+                </android.support.percent.PercentRelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_below="@id/relative2"
+                android:onClick="onObjectClick"
+                percent:layout_heightPercent="23%"
+                percent:layout_widthPercent="93%"
+                tools:onClick="onObjectClick">
+
+                <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:percent="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/time4"
+                        android:layout_height="match_parent"
+                        percent:layout_widthPercent="22%">
+
+                        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:percent="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/startLesson4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="13:30"
+                                android:textColor="@color/colourblack"
+                                android:textSize="@dimen/size18"
+                                percent:layout_marginLeftPercent="30%"
+                                percent:layout_marginTopPercent="20%" />
+
+                            <TextView
+                                android:id="@+id/finishLesson4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15:00"
+                                android:textColor="@color/colourgrey"
+                                percent:layout_marginLeftPercent="30%"
+                                percent:layout_marginTopPercent="44%" />
+
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Less4"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/time4"
+                        percent:layout_widthPercent="60%">
+
+                        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:percent="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/percentRelativeLayout5">
+
+                            <TextView
+                                android:id="@+id/lessonType3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:background="@color/colourlessonred"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="Prelegere"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/size12"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="10%" />
+
+                            <TextView
+                                android:id="@+id/lessonName3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MMC"
+                                android:textColor="@color/colourblack"
+                                android:textSize="@dimen/size20"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="32%" />
+
+                            <TextView
+                                android:id="@+id/teacher3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/VeronicaBagrin"
+                                android:textColor="@color/colourgrey"
+                                android:textSize="@dimen/size12"
+                                percent:layout_marginLeftPercent="10%"
+                                percent:layout_marginTopPercent="62%" />
+
+                        </android.support.percent.PercentRelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/subgroup3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp"
+                            android:text="1'st subgroup"
+                            android:textColor="@color/colourgrey"
+                            android:textSize="@dimen/size12"
+                            percent:layout_marginLeftPercent="10%"
+                            percent:layout_marginTopPercent="62%" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/room3"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/Less4"
+                        android:gravity="center"
+                        android:text="513A"
+                        android:textColor="@color/colourgrey"
+                        percent:layout_widthPercent="60%" />
+
+                </android.support.percent.PercentRelativeLayout>
+            </RelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <Button
+            android:id="@+id/button2"
+            percent:layout_widthPercent="30%"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/percentRelativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="showPrevDay"
+            android:drawable="@drawable/ic_back"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/button3"
+            percent:layout_widthPercent="30%"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/date"
+            android:onClick="showNextDay"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>

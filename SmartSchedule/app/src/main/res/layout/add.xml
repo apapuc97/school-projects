@@ -1,0 +1,262 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chris.orar.MainActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.chris.test.MainActivity">
+
+        <Button
+            android:id="@+id/right"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/center"
+            android:background="@drawable/border_right_free"
+            android:layout_marginTop="@dimen/size20"
+            android:text="Timetable"
+            android:textAllCaps="false"
+            android:textColor="#222222"/>
+
+        <View
+            android:id="@+id/center"
+            android:layout_height="1dp"
+            android:layout_width="1dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/felt"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/center"
+            android:background="@drawable/button_menu_left"
+            android:layout_marginTop="@dimen/size20"
+            android:text="Student"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"/>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/felt"
+            android:layout_above="@id/submit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/add0"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:hint="Name"
+                android:textColor="@color/colourblack"/>
+
+            <EditText
+                android:id="@+id/add1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:hint="Surname"
+                android:textColor="@color/colourblack"/>
+
+            <EditText
+                android:id="@+id/add2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:hint="Average mark"
+                android:textColor="@color/colourblack"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/male_gender"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border_left"
+                    android:layout_marginTop="20dp"
+                    android:text="Male"
+                    android:onClick="changeGender"
+                    tools:onClick="changeGender"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/female_gender"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_right_free"
+                    android:onClick="changeGender"
+                    android:text="Female"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colourblack"
+                    tools:onClick="changeGender" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/dormPlace"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border_left"
+                    android:layout_marginTop="20dp"
+                    android:onClick="changePlace"
+                    tools:onClick="changePlace"
+                    android:text="Dormitory"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/cityPlace"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/free_border"
+                    android:layout_marginTop="20dp"
+                    android:onClick="changePlace"
+                    tools:onClick="changePlace"
+                    android:text="City"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colourblack"/>
+
+                <Button
+                    android:id="@+id/suburbPlace"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border_right_free"
+                    android:layout_marginTop="20dp"
+                    android:text="Suburb"
+                    android:onClick="changePlace"
+                    tools:onClick="changePlace"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colourblack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="changeGender"
+                    android:text="Partener"
+                    android:textSize="@dimen/size16"
+                    tools:onClick="changeGender" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:checkedButton="@id/partenerNo">
+
+                    <RadioButton
+                        android:id="@+id/partenerYes"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textColor="@color/colourblack"/>
+
+                    <RadioButton
+                        android:id="@+id/partenerNo"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colourblack"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Work"
+                    android:textSize="@dimen/size16"
+                    android:layout_gravity="center"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:checkedButton="@id/workNo">
+
+                    <RadioButton
+                        android:id="@+id/workYes"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colourblack"
+                        android:text="Yes"/>
+
+                    <RadioButton
+                        android:id="@+id/workNo"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colourblack"
+                        android:text="No"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/size20"
+            android:background="#2196F3"
+            android:onClick="clickSubmitButton"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            tools:onClick="clickSubmitButton"
+            tools:ignore="OnClick" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Schedule</string>
+    <string name="grupa">What is your group?</string>
+    <string name="anul">What is your year?</string>
+    <string name="next">Next</string>
+    <string name="SI_161">SI-161</string>
+    <string name="select">Please tap on the lesson to see who will be present</string>
+    <string name="selectGroup">Please select the group that we can find your timetable</string>
+    <string name="TIMETABLE">Smart Schedule</string>
+    <string name="date">Tuesday, 21 November</string>
+
+
+    <!--Profesori-->
+    <string name="MihailKulev">Mihail Kulev</string>
+    <string name="MarianaCatruc">Mariana Catruc</string>
+    <string name="SilviaMunteanu">Silvia Munteanu</string>
+    <string name="VeronicaBagrin">Veronica Bagrin</string>
+    <string name="prevButton"><![CDATA[<<]]></string>
+    <string name="nextButton"><![CDATA[>>]]></string>
+
+</resources>
